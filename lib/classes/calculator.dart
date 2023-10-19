@@ -19,7 +19,7 @@ class Calculator {
   Map<Category, String> classify(double mass, double height) {
     final double bmi = _calculate(mass, height);
 
-    print('BMI value: ${bmi.toStringAsPrecision(4)}');
+    print('BMI value: ${bmi.toStringAsFixed(2)}');
 
     switch (bmi) {
       case < 16:
